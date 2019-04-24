@@ -10,11 +10,11 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
   return object;
 }
 
-/*ion deleteFromObjectByKey(object, key){
-   var newObj = object.assign({}, object);
-   delete newObj[key];
-   return newObj;
- }*/
+function deleteFromObjectByKey(object, key){
+  var newObj = object.assign({}, object);
+  delete newObj[key];
+  return newObj;
+}
  
  function destructivelyDeleteFromObjectByKey(object, key){
    delete object[key];
@@ -36,10 +36,5 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
       expect(obj['prop']).toBe(1)
     })
   })*/
-function deleteFromObjectByKey(object, key){
-  var newObj =  Object.assign({},object)
-  delete newObj[key]
-  return newObj
 
- }
   
