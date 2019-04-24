@@ -1,4 +1,4 @@
-var recipes = new objects
+var recipes = new object
 ({
   
 })
