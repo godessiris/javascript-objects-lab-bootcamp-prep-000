@@ -1,4 +1,4 @@
-var receipes =
+var recipes =
 ({
   
 })
