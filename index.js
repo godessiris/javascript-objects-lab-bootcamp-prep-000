@@ -8,19 +8,14 @@ function updateObjectWithKeyAndValue(object, key, value){
     prop: 1,
     prop2: 2
   }
-  object[key] = "value";
+  object[key] = value;
   return object;
 }
 
+function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
+  
+}
 /*
-
-
-      expect(updateObjectWithKeyAndValue(obj, 'prop2', 2)).toMatch({
-        prop: 1,
-        prop2: 2
-      })
-    })
-
     it('it does not modify the original object, but rather returns a clone with the new data', function() {
       var obj = { prop: 1 }
 
