@@ -15,13 +15,13 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
 }
 
  function deleteFromObjectByKey(object, key){
-   delete object[key];
-   return object;
+   delete object.assign[key];
+   return object.assign;
  }
  
  function destructivelyDeleteFromObjectByKey(object, key){
-   
-   
+   delete object[key];
+   return object;
  }
 
 /*  
