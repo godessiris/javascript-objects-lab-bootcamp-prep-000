@@ -4,7 +4,10 @@ var recipes = new object
 })
 
 function updateObjectWithKeyAndValue(object, key, value){
-  var obj = {prop: 1}
+  var obj = {
+    prop: 1,
+    prop2: 2
+  }
   object[key] = "value";
   return object;
 }
