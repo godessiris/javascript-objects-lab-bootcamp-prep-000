@@ -4,15 +4,13 @@ var recipes = new object
 })
 
 function updateObjectWithKeyAndValue(object, key, value){
+  var obj = {prop: 1}
   object[key] = "value";
   return object;
 }
 
 /*
 
-  describe('updateObjectWithKeyAndValue(object, key, value)', function() {
-    it('returns an object with the orignal key value pairs and the new key value pair', function() {
-      var obj = { prop: 1 }
 
       expect(updateObjectWithKeyAndValue(obj, 'prop2', 2)).toMatch({
         prop: 1,
