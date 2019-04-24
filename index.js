@@ -1,7 +1,4 @@
-var recipes = new object
-({
-  keys: "value"
-})
+var recipes = {};
 
 function updateObjectWithKeyAndValue(object, key, value){
   var obj = {
@@ -13,7 +10,8 @@ function updateObjectWithKeyAndValue(object, key, value){
 }
 
 function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
-  
+  object[key] = value;
+  return object;
 }
 /*
     it('it does not modify the original object, but rather returns a clone with the new data', function() {
