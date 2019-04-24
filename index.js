@@ -1,4 +1,7 @@
-var obj = {prop:1};
+var receipes =
+({
+  
+})
 
 
 
